@@ -7,7 +7,7 @@ fx = f;
 function pesoy(m, g) {
     pesoy = (m * g);
 }
-if ((prompt("\u00bfEl plano esta inclinado? (s/n) ") === "s")) {
+if ((prompt("\u00bfEl plano esta inclinado? (s/n) ").lower() === "s")) {
     inc = Number.parseInt(prompt("\u00bfCuantos grados(\u00b0) esta inclinado el plano? "));
     while (((inc > 90) || (inc < 0))) {
         console.log("No es posible, ingrese otro valor ");
