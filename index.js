@@ -13,8 +13,8 @@ if ((prompt("\u00bfEl plano esta inclinado? (s/n) ") === "s")) {
         console.log("No es posible, ingrese otro valor ");
         inc = Number.parseInt(prompt("\u00bfCuantos grados(\u00b0) esta inclinado el plano? "));
     }
-    fx = (fx + ((m * g) * math.sin(((inc * math.pi) / 180))));
-    pesoy = ((m * g) * math.cos(((inc * math.pi) / 180)));
+    fx = (fx + ((m * g) * math.sin(((inc * 3.14159) / 180))));
+    pesoy = ((m * g) * math.cos(((inc * 3.14159) / 180)));
 }
 if ((prompt("\u00bfHay friccion? (s/n) ") === "s")) {
     mat = {"a": "Madera sobre madera", "b": "Acero sobre hielo", "c": "Tefl\u00f3n sobre tefl\u00f3n", "d": "Caucho sobre cemento seco", "e": "Vidrio sobre vidrio", "f": "Esqu\u00ed sobre nieve", "g": "Madera sobre cuero", "h": "Aluminio sobre acero", "i": "Articulaciones humanas", "j": "Personalizado"};
@@ -72,7 +72,7 @@ if ((prompt("\u00bfHay friccion? (s/n) ") === "s")) {
     ffe = (ue * pesoy);
     ffd = (ud * pesoy);
     fuerzaNeta = (fx - ffd);
-    if ((ffe > abs(fx))) {
+    if (ffe > abs(fx)) {
         console.log("Fuerza Aplicada:", f, "Newton\nFuerza de Friccion Estatica:", ffe, "Newton\nEste objeto no se mueve porque la friccion entre los cuerpos es muy grande");
         exit();
     } else {
