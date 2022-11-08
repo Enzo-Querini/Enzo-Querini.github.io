@@ -12,18 +12,18 @@
     <form action="">
         <article>
             <label for="masa">Masa (KG)</label>
-            <input id="masa" type="text" placeholder="2" onkeypress="calcular()">
+            <input id="masa" type="text" placeholder="2">
         </article>
         <article>
             <label for="newtons">Newtons aplicados</label>
-            <input id="newtons" type="text" placeholder="10" onkeypress="calcular()">
+            <input id="newtons" type="text" placeholder="10">
         </article>
         <section>
             <label for="checkInclinacion">¿El plano esta inclinado?</label>
             <input id="checkInclinacion" type="checkbox">
             <article id="contenedorInclinacion">
-                <label for="grados">¿Cuantos grados° esta inclinado el plano? </label>
-                <input id="grados" type="text" placeholder="45" onkeyup="calcular()">
+                <label for="inclinacion">¿Cuantos grados° esta inclinado el plano? </label>
+                <input id="inclinacion" type="text" placeholder="45">
             </article>
             <span id="inclinacionAlert">  </span>
         </section>
@@ -49,11 +49,11 @@
             </article>
             <article>
                 <label for="friccionEstatico">Coeficiente de friccion estatico</label>
-                <input id="friccionEstatico" type="text" placeholder="0.5" onkeypress="calcular()">
+                <input id="friccionEstatico" type="text" placeholder="0.5">
             </article>
             <article>
                 <label for="friccionDinamico">Coeficiente de friccion dinamico</label>
-                <input id="friccionDinamico" type="text" placeholder="0.3" onkeypress="calcular()">
+                <input id="friccionDinamico" type="text" placeholder="0.3">
             </article>
         </section>
         <button type="submit">Calcular</button>
