@@ -12,14 +12,14 @@
     <form action="">
         <article>
             <label for="masa">Masa (KG)</label>
-            <input id="masa" type="text" placeholder="2" onkeypress="calcular()">
+            <input id="masa" type="text" placeholder="2" onkeyup="calcular()">
         </article>
         <article>
             <label for="newtons">Newtons aplicados</label>
-            <input id="newtons" type="text" placeholder="10" onkeypress="calcular()">
+            <input id="newtons" type="text" placeholder="10" onkeyup="calcular()">
         </article>
         <section>
-            <label for="checkInclinacion">¿El plano esta inclinado?</label>
+            <label>¿El plano esta inclinado?</label>
             <input id="checkInclinacion" type="checkbox">
             <article id="contenedorInclinacion">
                 <label for="grados">¿Cuantos grados° esta inclinado el plano? </label>
@@ -34,7 +34,7 @@
             </article>
             <article>
                 <label for="friccionSelect">Composicion de los materiales</label>
-                <select name="friccionSelect" id="friccionSelect">
+                <select name="friccionSelect" id="friccionSelect" onclick="calcular()">
                     <option>Madera sobre madera</option>
                     <option>Acero sobre hielo</option>
                     <option>Teflón sobre teflón</option>
@@ -48,12 +48,12 @@
                 </select>
             </article>
             <article>
-                <label for="friccionEstatico">Coeficiente de friccion estatico</label>
-                <input id="friccionEstatico" type="text" placeholder="0.5" onkeypress="calcular()">
+                <label for="friccionEstatica">Coeficiente de friccion estatico</label>
+                <input id="friccionEstatica" type="text" placeholder="0.5" onkeyup="calcular()">
             </article>
             <article>
-                <label for="friccionDinamico">Coeficiente de friccion dinamico</label>
-                <input id="friccionDinamico" type="text" placeholder="0.3" onkeypress="calcular()">
+                <label for="friccionDinamica">Coeficiente de friccion dinamico</label>
+                <input id="friccionDinamica" type="text" placeholder="0.3" onkeyup="calcular()">
             </article>
         </section>
         <button type="submit">Calcular</button>
@@ -62,7 +62,7 @@
 <footer>
 
 </footer>
-<script src="./index.js"></script>
 <!--<script src="./index.js"></script>-->
+<script src="./index.js"></script>
 </body>
 </html>
