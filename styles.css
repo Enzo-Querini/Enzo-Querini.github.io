@@ -1,0 +1,13 @@
+body{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 0 30vh;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+}
+h1{
+    font-size: 10vh;
+}

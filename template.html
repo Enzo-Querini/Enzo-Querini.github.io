@@ -12,29 +12,29 @@
     <form action="">
         <article>
             <label for="masa">Masa (KG)</label>
-            <input id="masa" type="text" placeholder="2">
+            <input id="masa" type="text" placeholder="2" onkeyup="calcular()" required>
         </article>
         <article>
             <label for="newtons">Newtons aplicados</label>
-            <input id="newtons" type="text" placeholder="10">
+            <input id="newtons" type="text" placeholder="10" onkeyup="calcular()" required>
         </article>
         <section>
-            <label for="checkInclinacion">¿El plano esta inclinado?</label>
-            <input id="checkInclinacion" type="checkbox">
+            <label>¿El plano esta inclinado?</label>
+            <input id="checkInclinacion" type="checkbox" onclick="gradosLoader(),calcular()">
             <article id="contenedorInclinacion">
-                <label for="inclinacion">¿Cuantos grados° esta inclinado el plano? </label>
-                <input id="inclinacion" type="text" placeholder="45">
+                <label for="grados">¿Cuantos grados° esta inclinado el plano? </label>
+                <input id="grados" type="text" placeholder="45" onkeyup="calcular()">
             </article>
             <span id="inclinacionAlert">  </span>
         </section>
-        <section id="contenedorFriccion">
+        <section>
             <article>
                 <label for="checkFriccion">¿Hay friccion?</label>
-                <input id="checkFriccion" type="checkbox">
+                <input id="checkFriccion" type="checkbox" onclick="friccionSelectLoader(),calcular()">
             </article>
-            <article>
+            <article id="contenedorFriccionSelect">
                 <label for="friccionSelect">Composicion de los materiales</label>
-                <select name="friccionSelect" id="friccionSelect">
+                <select name="friccionSelect" id="friccionSelect" onchange="coeficientesLoader(),calcular()">
                     <option>Madera sobre madera</option>
                     <option>Acero sobre hielo</option>
                     <option>Teflón sobre teflón</option>
@@ -47,22 +47,23 @@
                     <option>Personalizado</option>
                 </select>
             </article>
+            <div id="contenedorCoeficientes">
             <article>
-                <label for="friccionEstatico">Coeficiente de friccion estatico</label>
-                <input id="friccionEstatico" type="text" placeholder="0.5">
+                <label for="friccionEstatica">Coeficiente de friccion estatico</label>
+                <input id="friccionEstatica" type="text" placeholder="0.5" onkeyup="calcular()">
             </article>
             <article>
-                <label for="friccionDinamico">Coeficiente de friccion dinamico</label>
-                <input id="friccionDinamico" type="text" placeholder="0.3">
+                <label for="friccionDinamica">Coeficiente de friccion dinamico</label>
+                <input id="friccionDinamica" type="text" placeholder="0.3" onkeyup="calcular()">
             </article>
+            </div>
         </section>
-        <button type="submit">Calcular</button>
     </form>
 <h2>Result:</h2>
 <footer>
 
 </footer>
-<script src="./index.js"></script>
 <!--<script src="./index.js"></script>-->
+<script src="./index.js"></script>
 </body>
 </html>
