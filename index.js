@@ -102,9 +102,11 @@ function calcular(){
             console.log("Este objeto no se mueve");
         }
     }
-    if(selector){
+    if(selector && isNaN(a) == false){
     document.getElementById("result").innerHTML = "El objeto tiene una aceleracion de "+a+" m/s^2"
     console.log("El objeto tiene una aceleracion de", a, "m/s^2")
+    }else{
+        document.getElementById("result").innerHTML = ""
     }
 }
 //funciones que se encargan de actualizar la pagina
