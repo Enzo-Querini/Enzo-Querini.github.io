@@ -5,31 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fisica</title>
-    <link rel="stylesheet" href="/bootstrap.css">
-    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/styles/bootstrap.css">
+    <link rel="stylesheet" href="/styles/styles.css">
 </head>
 <body>
     <h1>Fisica</h1>
     <form action="">
-        <article>
-            <label for="masa">Masa (KG)</label>
-            <input id="masa" type="text" placeholder="2" onkeyup="calcular()" required>
-        </article>
-        <article>
-            <label for="newtons">Newtons aplicados</label>
-            <input id="newtons" type="text" placeholder="10" onkeyup="calcular()" required>
-        </article>
         <section>
-            <label>¿El plano esta inclinado?</label>
-            <input id="checkInclinacion" type="checkbox" onclick="gradosLoader(),calcular()">
+            <p >Masa (KG)</p>
+            <input id="masa" type="text" placeholder="2" onkeyup="calcular()" required>
+        </section>
+        <section>
+            <p >Newtons aplicados</p>
+            <input id="newtons" type="text" placeholder="10" onkeyup="calcular()" required>
+        </section>
+        <section>
+            <p>¿El plano esta inclinado?</p>
+            <input id="checkInclinacion" type="checkbox" class="checkbox" onclick="gradosLoader(),calcular()">
             <article id="contenedorInclinacion">
             </article>
             <span id="inclinacionAlert">  </span>
         </section>
         <section>
             <article>
-                <label for="checkFriccion">¿Hay friccion?</label>
-                <input id="checkFriccion" type="checkbox" onclick="friccionSelectLoader(),coeficientesLoader(),calcular()">
+                <p >¿Hay friccion?</p>
+                <input id="checkFriccion" type="checkbox" class="checkbox" onclick="friccionSelectLoader(),coeficientesLoader(),calcular()">
             </article>
             <article id="contenedorFriccionSelect">
             </article>

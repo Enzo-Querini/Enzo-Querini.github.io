@@ -113,7 +113,7 @@ function calcular(){
 function gradosLoader(){
     if(checkInclinacion.checked){
         contenedorInclinacion.innerHTML = `
-        <label for="grados">¿Cuantos grados° esta inclinado el plano? </label>
+        <p>¿Cuantos grados° esta inclinado el plano? </p>
         <input id="grados" type="text" placeholder="45" onkeyup="calcular()">
         `
     }else{
@@ -123,7 +123,7 @@ function gradosLoader(){
 function friccionSelectLoader(){
     if(checkFriccion.checked){
         contenedorFriccionSelect.innerHTML = `
-        <label for="friccionSelect">Composicion de los materiales</label>
+        <p>Composicion de los materiales</p>
         <select name="friccionSelect" id="friccionSelect" onchange="coeficientesLoader(),calcular()">
             <option>Madera sobre madera</option>
             <option>Acero sobre hielo</option>
@@ -147,11 +147,11 @@ function coeficientesLoader(){
         console.log("corrio el if")
         contenedorCoeficientes.innerHTML = `
         <article>
-            <label for="friccionEstatica">Coeficiente de friccion estatico</label>
+            <p>Coeficiente de friccion estatico</p>
             <input id="friccionEstatica" type="text" placeholder="0.5" onkeyup="calcular()">
         </article>
         <article>
-            <label for="friccionDinamica">Coeficiente de friccion dinamico</label>
+            <p>Coeficiente de friccion dinamico</p>
             <input id="friccionDinamica" type="text" placeholder="0.3" onkeyup="calcular()">
         </article>
         `
