@@ -103,7 +103,7 @@ function calcular(){
         }
     }
     if(selector && isNaN(a) == false){
-    document.getElementById("result").innerHTML = "El objeto tiene una aceleracion de "+a+" m/s^2"
+    document.getElementById("result").innerHTML = "El objeto tiene una aceleracion de "+a+" m/s&sup2"
     console.log("El objeto tiene una aceleracion de", a, "m/s^2")
     }else if(selector){
         document.getElementById("result").innerHTML = ""
